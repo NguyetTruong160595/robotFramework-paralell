@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2.2 (Python 3.13.3 on darwin)" generated="2025-05-18T23:46:05.828053" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/nguyettruong/Documents/robotFramework/tests">
+<suite id="s1-s1" name="Login Test" source="/Users/nguyettruong/Documents/robotFramework/tests/login_test.robot">
+<test id="s1-s1-t1" name="Open Example Website" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-18T23:46:00.778314" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.778131" elapsed="4.456512"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-18T23:46:05.516877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-18T23:46:05.517002" level="FAIL">Title should have been 'Example Domain' but was 'Google'.</msg>
+<arg>Example Domain</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-05-18T23:46:05.234946" elapsed="0.283882">Title should have been 'Example Domain' but was 'Google'.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-18T23:46:05.518971" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2025-05-18T23:46:00.777550" elapsed="4.741552">Title should have been 'Example Domain' but was 'Google'.</status>
+</test>
+<status status="FAIL" start="2025-05-18T23:46:00.691000" elapsed="4.741000"/>
+</suite>
+<suite id="s1-s2" name="Test Login" source="/Users/nguyettruong/Documents/robotFramework/tests/test_login.robot">
+<test id="s1-s2-t1" name="Login With Valid Credentials" line="2">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logging in with valid credentials</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.692272" elapsed="0.000137"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-18T23:46:02.697589" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.692493" elapsed="2.005671"/>
+</kw>
+<status status="PASS" start="2025-05-18T23:46:00.691862" elapsed="2.006977"/>
+</test>
+<status status="PASS" start="2025-05-18T23:46:00.691361" elapsed="2.008310"/>
+</suite>
+<suite id="s1-s3" name="Test Search" source="/Users/nguyettruong/Documents/robotFramework/tests/test_search.robot">
+<test id="s1-s3-t1" name="Search Feature Works" line="2">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Searching for item</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.692263" elapsed="0.000129"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-18T23:46:02.693963" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.692475" elapsed="2.005209"/>
+</kw>
+<status status="PASS" start="2025-05-18T23:46:00.691880" elapsed="2.006631"/>
+</test>
+<status status="PASS" start="2025-05-18T23:46:00.691351" elapsed="2.008123"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 3 executions.</doc>
+<status status="FAIL" start="2025-05-18T23:46:00.684000" elapsed="4.741000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="2" fail="1" skip="0">Tests</stat>
+<stat name="Login Test" id="s1-s1" pass="0" fail="1" skip="0">Tests.Login Test</stat>
+<stat name="Test Login" id="s1-s2" pass="1" fail="0" skip="0">Tests.Test Login</stat>
+<stat name="Test Search" id="s1-s3" pass="1" fail="0" skip="0">Tests.Test Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on darwin)" generated="2025-05-18T23:46:00.677255" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/nguyettruong/Documents/robotFramework/tests">
+<suite id="s1-s1" name="Login Test" source="/Users/nguyettruong/Documents/robotFramework/tests/login_test.robot">
+<test id="s1-s1-t1" name="Open Example Website" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-18T23:46:00.778314" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-18T23:46:00.778131" elapsed="4.456512"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-18T23:46:05.516877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-18T23:46:05.517002" level="FAIL">Title should have been 'Example Domain' but was 'Google'.</msg>
+<arg>Example Domain</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-05-18T23:46:05.234946" elapsed="0.283882">Title should have been 'Example Domain' but was 'Google'.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-18T23:46:05.518971" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2025-05-18T23:46:00.777550" elapsed="4.741552">Title should have been 'Example Domain' but was 'Google'.</status>
+</test>
+<status status="FAIL" start="2025-05-18T23:46:00.691336" elapsed="4.828020"/>
+</suite>
+<status status="FAIL" start="2025-05-18T23:46:00.684904" elapsed="4.834699"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Login Test" id="s1-s1" pass="0" fail="1" skip="0">Tests.Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

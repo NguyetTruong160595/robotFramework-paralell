@@ -1,0 +1,24 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Login Test                                                              
+==============================================================================
+Open Example Website                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/nguyettruong/Documents/robotFramework/tests/login_test.robot:8
+    T:  Open Example Website    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/nguyettruong/Documents/robotFramework/tests/login_test.robot:10
+      Title Should Be    Example Domain
+______________________________________________________________________________
+| FAIL |
+Title should have been 'Example Domain' but was 'Google'.
+------------------------------------------------------------------------------
+Tests.Login Test                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/nguyettruong/Documents/robotFramework/results/pabot_results/0/output.xml
